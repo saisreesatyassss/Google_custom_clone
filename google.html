@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Basic HTML </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+  *{
+    padding: 0%;
+    margin: 0;
+  }
+  body {
+     margin: 0;
+    background-color: white;
+    color: black;
+  }
+
+  .btn-text-right {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  
+ 
+   
+  .google-logo span:nth-child(1) {
+    color: #4285f4; /* Blue */
+    }
+
+    .google-logo span:nth-child(2) {
+      color: #ea4335; /* Red */
+    }
+
+    .google-logo span:nth-child(3) {
+      color: #fdba34; /* Orange */
+    }
+
+    .google-logo span:nth-child(4) {
+      color: #4285f4; /* Blue */
+    }
+
+    .google-logo span:nth-child(5) {
+      color: #3cba54; /* Green */
+    }
+
+    .google-logo span:nth-child(6) {
+      color: #ea4335; /* Red */
+    }
+    .container1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  height: 100vh;
+  margin-top: 10%;
+}
+
+.google-logo {
+  display: flex;
+  font-size: 100px;
+  font-family: "Product Sans";
+  padding-bottom: 0px;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  box-shadow: 10px #ccc;
+}
+
+input[type="text"] {
+padding: 10px;
+border: 1px solid #ccc;
+  border-radius: 50px;
+  /* flex: 4; */
+  height: 25px;
+  width: 500px;
+  margin-right: 10px;  
+  /* box-shadow: rgba(0, 0, 0, 0.24) 0px 2px 8px; */
+  /* box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.2); */ 
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+input:focus {
+  outline: none;
+}
+input[type="text"]::placeholder {
+ font-size:medium;  
+    text-align: start;
+     }
+ 
+.search-input {
+    position: relative;
+   }
+
+  .search-input input[type="text"] {
+    padding-left: 60px;
+    padding-right: 0px;
+    background-image: url("images/search.svg");
+    background-repeat: no-repeat;
+    background-position: 15px center;
+    background-size: 20px 20px; /* Adjust the size of the icon */
+  }
+ 
+.clear-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url("images/search.svg");
+
+  right: 20px;
+}
+.search-button
+ {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url("images/search.svg");
+  right: 50px;
+}
+.img_1{height: 20px;
+  width: 20px;
+   position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 62px;
+}
+.img_2{
+  height: 18px;
+  width: 18px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+   right: 32px;
+}
+.text_button1{
+ border: none;
+  background: none;  
+  text-decoration: none;
+  cursor: pointer;
+  padding: 0;
+  }
+  .text_button1:hover {
+  text-decoration: underline;
+}
+.text_button2{
+ border: none;
+  background: none;  
+  text-decoration: none;
+  cursor: pointer;
+  padding: 10px;
+  }
+  .text_button2:hover {
+  text-decoration: underline;
+}
+
+ 
+ .toggleButton {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  background-color: #ccc;
+  border-radius: 34px;
+  /* cursor: pointer; */
+  transition: background-color 0.3s;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 30px;
+  height: 30px;
+  background-color: rgb(145, 132, 132);
+  border-radius: 50%;
+  transition: transform 0.3s;
+  -webkit-transition: transform 0.3s;
+}
+
+.toggleButton.checked {
+  background-color: #2196F3;
+}
+
+.toggleButton.checked .slider {
+  transform: translateX(26px);
+}
+table td, table th{
+  border-spacing: 10px;
+  padding : 5px;
+}
+
+  .container2 {
+    position: absolute;
+    bottom: 90px;
+    left: 425px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width:500px;
+    height: auto;
+    /* background-color: aqua; */
+    column-count: 5;
+    /* row-count:2; */
+    flex-wrap: wrap;
+    
+  /* display: flex; */
+  /* flex-direction: row; */
+  /* align-items:start; */
+  /* justify-content: center; */
+  /* height: 100vh; */
+  /* margin-top: 10%; */
+}
+  .box{  
+  display: flex;
+  flex-direction: column-reverse;
+  position: relative;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  background-color: rgb(255, 255, 255);
+  /* margin: 10px; */
+  cursor: pointer;
+  display: flex;
+  border-radius: 10px;
+    
+  }
+  .dark-theme .box {
+  background-color: #181818;
+}
+  .dark-theme .box:hover{
+  background-color: #464646;
+}
+.dark-theme .text_button1  {
+color: rgb(250, 244, 236);
+}
+.dark-theme .text_button2  {
+color: rgb(250, 244, 236);
+}
+ 
+.box:hover {
+  background-color: lightgray;
+}
+.box img {
+  position: absolute;
+  top: 40px;
+  left: 25px;
+  width: 50px;  
+  height: 50px; 
+ }
+.box p {
+  color:#181818;
+  text-decoration: none;
+  font-size: 12px;
+  margin-top: 5px;
+  font-weight: 600;
+}
+.dark-theme .box p {
+  color: rgb(250, 244, 236);
+ }
+.container2 a{
+  text-decoration: none;
+}
+ .dark-theme {
+    background-color:#181818;
+    color: white; 
+  }
+</style>
+<body>
+
+  <table div  class="btn-text-right"  >
+  <tr>
+    <th><button type="checkbox" class="toggleButton" onclick="toggleTheme()"><span class="slider"></span></button> </th>
+    <th><button class="text_button1">Gmail</button></th>
+    <th><button class="text_button2">Images</button></th>
+    <th ><a href="" style="padding-right: 19px;"><img class="333" src="images/333.svg" alt="" title="    Googles apps"></a></th>
+    <th>  <a href=""><img class=" " src="images/profile.png" alt="" title=" Google account"></a></th>
+  </tr>
+  
+  </table>
+
+ 
+<div class="container1">
+
+  <div class="google-logo">
+    <span><img id=" " src="images/google.svg" alt="" title="">
+    </span>
+  </div>
+  <form action="https://www.google.com/search" method="get">
+    <div class="search-input">
+      <input type="text" name="q" placeholder="Search Google or type a URL" role="combobox" autocomplete="on"aria-live="polite" aria-expanded="false" aria-controls="matches">
+      <a href=""><img class="img_1" src="images/mic.svg" alt="" title="Search by voice"></a>
+      <a href=""><img class="img_2" src="images/cam.svg" alt="" title="Search by images"></a>
+    </div>
+   </form>
+  </div>
+
+  <div class = "container2">
+   <a href="https://www.linkedin.com/in/padala-sai-sri-satya-subramaneswar-359998247/" target="_blank">
+    <div class="box">
+      <img class="img_1" src="images/Linkedin.svg" alt="" title="">
+      <p>Linkedin</p>
+    </div>
+   </a>
+ 
+   <a href="https://www.instagram.com/saisreesatya/" target="_blank">
+    <div class="box">
+      <img class="img_1" src="images/Instagram.svg" alt="" title="">
+      <p>Instagram</p>
+    </div>
+   </a>
+ 
+   <a href="https://github.com/saisreesatyassss" target="_blank">
+    <div class="box">
+      <img class="img_1" src="images/Github.svg" alt="" title="">
+      <p>Github</p>
+    </div>
+   </a>
+ 
+   <a href=" https://www.figma.com/@padalasaisrisat" target="_blank">
+    <div class="box">
+      <img class="img_1" src="images/figma.svg" alt="" title="">
+      <p>Figma</p>
+    </div>
+   </a>
+   <a href="https://www.facebook.com/profile.php?id=100010997297400 " target="_blank">
+    <div class="box">
+      <img class="img_1" src="images/Facebook.svg" alt="" title="">
+      <p>Facebook</p>
+    </div>
+   </a>
+   <a href="https://leetcode.com/saisreesatyassss/" target="_blank">
+    <div class="box">
+      <img class="img_1" src="images/Leetcode.svg" alt="" title="">
+      <p>Leetcode</p>
+    </div>
+   </a>
+   <a href=" https://twitter.com/saisreesatya000" target="_blank">
+    <div class="box">
+      <img class="img_1" src="images/Twitter.svg" alt="" title="">
+      <p>Twitter</p>
+    </div>
+   </a>
+   <a href="https://www.youtube.com/channel/UChwitCvE0hkskraqQ3x_Nww" target="_blank">
+    <div class="box">
+      <img class="img_1" src="images/Youtube.svg" alt="" title="">
+      <p>Youtube</p>
+    </div>
+   </a>
+   <a href=" " target="_blank">
+    <div class="box">
+      <img class="img_1" src="images/Spotify.svg" alt="" title="">
+      <p>Spotify</p>
+    </div>
+   </a>
+   <a href=" " target="_blank">
+    <div class="box">
+      <img class="img_1" src="images/plus.svg" alt="" title="">
+      <p>Add shortcut</p>
+    </div>
+   </a>
+ 
+
+  </div>
+  <script>
+    
+    function toggleTheme() {
+      var bodyElement = document.body;
+      bodyElement.classList.toggle("dark-theme");
+      bodyElement.classList.toggle("box-toggel");
+
+       var toggleButton = document.querySelector('.toggleButton');
+       toggleButton.classList.toggle('checked');
+    }
+    
+
+  </script>
+
+</body>
+</html>
